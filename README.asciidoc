@@ -1,0 +1,18 @@
+= KAP Podman/Docker definition
+
+== Build
+
+To the container, run the following command from the directory
+containing the defintion file `Dockerfile`.
+
+[source]
+--
+podman build -t kap .
+--
+
+== Execute a program in a file
+
+[source]
+--
+echo "100 + 200 300 400 500" | podman run -i kap
+--
